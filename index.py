@@ -26,12 +26,6 @@ else:
 # Next, we'll add a check to make sure that the input text is long enough 
 # to summarize, and display a warning if it is not:
 
-if len(article_text)>100:
- # Generate the summary
- # .......
- 
-else:
- st.warning('Not enough words to summarize!')
 
 if st.button(“Generate Summary”,type=’primary’):
  
