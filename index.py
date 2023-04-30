@@ -45,3 +45,6 @@ if st.button(“Generate Summary”,type=’primary’):
 # Print the generated summary
  res = response[“choices”][0][“text”]
  st.success(res)
+
+# Give user the option to download result
+st.download_button(‘Download result’, res)
