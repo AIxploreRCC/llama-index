@@ -6,9 +6,8 @@ import os, streamlit as st
 from dotenv import load_dotenv
 
 # Load environment variables from the .env file
-import openai
-load_dotenv()
-openai.api_key = os.getenv('OPENAI_API_KEY')
+
+openai.api_key = st.secrets["OPENAI_API_KEY"]
 
 from llama_index import GPTSimpleVectorIndex, SimpleDirectoryReader, LLMPredictor, PromptHelper
 from langchain import OpenAI
