@@ -30,4 +30,4 @@ if len(article_text)>100:
  # Generate the summary
  # .......
 else:
- st.warning("Not enough words to summarize!")
+ st.warning('Not enough words to summarize!')
