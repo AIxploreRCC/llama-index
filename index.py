@@ -32,3 +32,16 @@ if len(article_text)>100:
  
 else:
  st.warning('Not enough words to summarize!')
+
+if st.button(“Generate Summary”,type=’primary’):
+ 
+# Use GPT-3 to generate a summary of the article
+ response = openai.Completion.create(
+                    engine = "text-davinci-002",
+                    prompt = "Please summarize this scientific article for me in a few sentences: "+ article_text,
+                    max_tokens = out_token,
+                    temperature = 0.5)
+ 
+# Print the generated summary
+ res = response[“choices”][0][“text”]
+ st.success(res)
