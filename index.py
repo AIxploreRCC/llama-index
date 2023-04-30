@@ -6,7 +6,7 @@ import openai
 import os 
 from dotenv import load_dotenv
 load_dotenv('api_key.env')
-openai.api_key = os.environ.get('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')
+openai.api_key = os.environ.get('pass')
 
 # Create Text Area Widget to enable user to enter texts
 article_text = st.text_area('Enter your scientific texts to summarize')
