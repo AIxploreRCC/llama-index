@@ -27,7 +27,7 @@ else:
 # to summarize, and display a warning if it is not:
 
 
-if st.button(“Generate Summary”,type=’primary’):
+if st.button('Generate Summary',type='primary'):
  
 # Use GPT-3 to generate a summary of the article
  response = openai.Completion.create(
